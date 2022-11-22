@@ -20,7 +20,7 @@
               <a class="navigation-link" href="#">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="about.html">О Седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
@@ -62,20 +62,19 @@
 
           <section class="intro">
             <h2 class="intro-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-          </section>
-          <p class="intro-discription">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-          <section class="intro">
+            <p class="intro-discription">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
             <h3 class="visually-hidden" hidden>Преимущетва</h3>
           </section>
 
 
+
           <div class="index-columns">
             <section class="advantages-list">
-              <div class="advantages-city">
 
+              <div class="advantages-city">
                 <div>
-                  <h4 class="advantages-title">Настоящий городок</h4>
-                  <p class="advantages-discription">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                  <h4 class="advantages-city-title">Настоящий городок</h4>
+                  <p class="advantages-city-discription">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                 </div>
                 <img src="images/photo-1.jpg" width="800" height="384" alt="Фотография города">
 
@@ -102,10 +101,10 @@
               <div class="advantages-bridge">
                 <div>
 
-                  <h4 class="advantages-title">Там есть мост дьявола</h4>
-                  <p class="advantages-discription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                  <h4 class="advantages-bridge-title">Там есть мост дьявола</h4>
+                  <p class="advantages-bridge-discription">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
-                <img src="images/photo-2.jpg" width="800" height="384" alt="Фотография каньона">
+                <img class="img-2" src="images/photo-2.jpg" width="800" height="384" alt="Фотография каньона">
               </div>
 
               <ul class="advantages-service">
@@ -135,30 +134,34 @@
               <h2 class="search-title">Заинтересовались?</h2>
               <p class="search-discription">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
                 гостиниц в Седоне</p>
-              <a class="button button-all" href="#">Поиск гостиниц в Седоне</a>
+              <a class="button-button-all" href="#">Поиск гостиниц в Седоне</a>
             </div>
           </section>
 
-          <section class="appointment">
-            <div>
-              <h2 class="appointment-title">Подпишитесь на рассылку</h2>
+          <div class="subscription-form">
+            <section class="appointment">
+              <div class="appointment-title-appointment-discription">
+                <h2 class="appointment-form-title">Подпишитесь на рассылку</h2>
 
-              <p class="appointment-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            </div>
-          </section>
+                <p class="appointment-form-discription">Только полезная информация и никакого спама, честное
+                  бойскаутское!
+                </p>
+              </div>
+            </section>
 
-          <img class="background" src="images/subscribe.jpg" alt="Изображение коньона" width="1200" height="414">
+            <img class="background" src="images/subscribe.jpg" alt="Изображение коньона" width="1200" height="414">
 
 
-          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="appointment-form" for="appointment-email">email</label>
-            <input type="text" id="appointment-email" name="appointment-email" required>
-            <button class="button" type="submit">Подписаться</button>
-          </form>
-
+            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="appointment-form-label" for="appointment-email">email</label>
+              <input class="input" type="text" id="appointment-email" name="appointment-email" required>
+              <button class="input-button" type="submit">Подписаться</button>
+            </form>
+          </div>
 
         </div>
       </main>
+
       <footer class="page-footer">
         <div class="page-footer-container">
           <section class="footer-social">
@@ -191,6 +194,40 @@
           <img class="contacts-logo" src="images/logo_htmlacademy.svg" width="115" height="33" alt="Логотип академии">
         </div>
       </footer>
+
+      <div class="modal-container modal-container-close">
+        <div class="modal modal-auth">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+            <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+              <p class="field-group">
+                <label class="visually-hidden" for="auth-login">Дата заезда</label>
+                <input class="auth-form-field field" type="text" id="auth-login" name="auth-login" placeholder="Логин">
+              </p>
+              <p class="field-group">
+                <label class="visually-hidden" for="auth-password">Дата выезда</label>
+                <input class="auth-form-field field" type="password" id="auth-password" name="auth-password" placeholder="Пароль">
+              </p>
+              <p class="field-group auth-form-user-options">
+                <!--<label class="auth-form-checkbox control">
+                  <input class="visually-hidden control-input" type="checkbox" name="firm-storе">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Запомнить меня</span>
+                </label>-->
+                <!--<a class="auth-form-recovery" href="#">Забыл пароль</a>-->
+              </p>
+              <button class="button auth-form-button" type="submit">Найти</button>
+              <!--<a class="button auth-form-register" href="#">Регистрация</a>-->
+            </form>
+
+          </section>
+
+        </div>
+      </div>
 
     </div>
   </body>
